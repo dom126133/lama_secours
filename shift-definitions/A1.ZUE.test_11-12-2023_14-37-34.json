@@ -1,0 +1,282 @@
+{
+  "shiftDefinition" : {
+    "id" : "b06c0bc9-4339-4e23-9be6-97af042f5059",
+    "version" : 5,
+    "name" : "A1.ZUE.test",
+    "description" : "A1",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-07T13:51:28.685760Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T13:37:34.622778Z"
+    },
+    "intendedStartTime" : "06:00:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT8H45M",
+    "taskDefinitionIds" : [ "a3593b41-4eb3-4263-83e3-8643f807efa9", "c9e1a66b-27a5-4914-b594-18ff5b7c46bd", "e015ec10-c2b8-4e08-8424-97f6912fe218", "94e1e6b9-363c-4757-a8cc-ad908e23fa44", "2b5b1c7c-f928-43c0-8fdf-9d6f3ef29d0b", "d58ba71e-12a5-4eec-b56a-39951b260957", "607e9a98-0a7e-400b-823a-41f0d6f19b06", "ffdd9953-c180-4c72-93ec-3e267036eb2e", "7491dfba-9f0a-4e30-a09d-b806d7f20830", "a7ec52cf-dc1a-4d02-8f14-464fc98a5135", "7c4977e1-a29a-4030-a29a-c1491b191d70" ]
+  },
+  "taskDefinitions" : [ {
+    "id" : "a3593b41-4eb3-4263-83e3-8643f807efa9",
+    "version" : 2,
+    "name" : "G1_ZUE_Einfuehrung",
+    "description" : "Einführung",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T13:36:31.457488Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:39:14.364948Z"
+    },
+    "intendedStartTime" : "06:00:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT15M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "c9e1a66b-27a5-4914-b594-18ff5b7c46bd",
+    "version" : 1,
+    "name" : "LLSWC.08z.A1",
+    "description" : "Lead LLSWC: 07:00z (Validity: 10z Update)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-07T14:51:05.326912Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-07T14:53:38.449187Z"
+    },
+    "intendedStartTime" : "06:30:00",
+    "allowedStartTime" : "06:30:00",
+    "zoneId" : "UTC",
+    "duration" : "PT30M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : "2000-10-17",
+      "endDate" : "2001-04-30",
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "e015ec10-c2b8-4e08-8424-97f6912fe218",
+    "version" : 2,
+    "name" : "DACH.vorbereiten.A1.winter",
+    "description" : "Vorbereiten Dach Konferenz (Leitung gemäss Liste)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-07T13:34:17.062432Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-07T14:16:44.499784Z"
+    },
+    "intendedStartTime" : "07:00:00",
+    "allowedStartTime" : "06:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT15M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "94e1e6b9-363c-4757-a8cc-ad908e23fa44",
+    "version" : 2,
+    "name" : "LLSWC.07z.A1",
+    "description" : "Lead LLSWC: 08:00z (Validity: 14z new)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-07T14:49:07.146935Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-07T14:53:21.964944Z"
+    },
+    "intendedStartTime" : "07:00:00",
+    "allowedStartTime" : "07:00:00",
+    "zoneId" : "UTC",
+    "duration" : "PT1H",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : "2000-10-17",
+      "endDate" : "2001-04-30",
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "2b5b1c7c-f928-43c0-8fdf-9d6f3ef29d0b",
+    "version" : 2,
+    "name" : "Flugwetter.Kontrolle.A1.winter",
+    "description" : "Kontrolle Flugwetterprognose 06-12z (falls cca: \"KORREKTUR: ...\" und Anruf bei PBW)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-07T13:37:43.615257Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-07T14:16:34.598954Z"
+    },
+    "intendedStartTime" : "07:15:00",
+    "allowedStartTime" : "06:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT1H55M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Korrektur Flugwetterprognose 06-12z",
+      "url" : "${castor.baseUrl}/products/new?productDefinition=XYZ&requestId=${requestId}&action=loadLast",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : null,
+      "type" : "HTTP_REQUEST"
+    } ]
+  }, {
+    "id" : "d58ba71e-12a5-4eec-b56a-39951b260957",
+    "version" : 1,
+    "name" : "Vorschlag.besprechen.A1.winter",
+    "description" : "Besprechung Vorschlag mit G1",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-07T13:40:48.054312Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-07T14:16:27.555762Z"
+    },
+    "intendedStartTime" : "07:20:00",
+    "allowedStartTime" : "06:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT10M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "607e9a98-0a7e-400b-823a-41f0d6f19b06",
+    "version" : 4,
+    "name" : "LLSWC.send9z.A1",
+    "description" : "Lead LLSWC: Schlussredaktion und Versenden beider Karten",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-07T13:44:32.837987Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-07T14:53:58.423211Z"
+    },
+    "intendedStartTime" : "07:55:00",
+    "allowedStartTime" : "07:55:00",
+    "zoneId" : "UTC",
+    "duration" : "PT5M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : "2000-10-17",
+      "endDate" : "2001-04-30",
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "ffdd9953-c180-4c72-93ec-3e267036eb2e",
+    "version" : 1,
+    "name" : "TAF.LSZH.0915",
+    "description" : "TAF LSZH 0915 (30h)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-07T13:43:26.942242Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-07T13:48:22.942782Z"
+    },
+    "intendedStartTime" : "08:00:00",
+    "allowedStartTime" : "07:30:00",
+    "zoneId" : "UTC",
+    "duration" : "PT25M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "7491dfba-9f0a-4e30-a09d-b806d7f20830",
+    "version" : 0,
+    "name" : "TAF.LSZB.0918",
+    "description" : "TAF LSZB 0918 (9h)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-14T07:57:26.345147Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-14T07:57:26.345147Z"
+    },
+    "intendedStartTime" : "08:05:00",
+    "allowedStartTime" : "07:30:00",
+    "zoneId" : "UTC",
+    "duration" : "PT20M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "a7ec52cf-dc1a-4d02-8f14-464fc98a5135",
+    "version" : 0,
+    "name" : "TAF.LSZR.0918",
+    "description" : "TAF LSZR 0918 (9h)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-14T07:57:44.066965Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-14T07:57:44.066965Z"
+    },
+    "intendedStartTime" : "08:05:00",
+    "allowedStartTime" : "07:30:00",
+    "zoneId" : "UTC",
+    "duration" : "PT20M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "7c4977e1-a29a-4030-a29a-c1491b191d70",
+    "version" : 0,
+    "name" : "TAF.LSZA.0918",
+    "description" : "TAF LSZA 0918 (9h)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-11-14T07:57:58.409237Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-11-14T07:57:58.409237Z"
+    },
+    "intendedStartTime" : "08:05:00",
+    "allowedStartTime" : "07:30:00",
+    "zoneId" : "UTC",
+    "duration" : "PT20M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  } ]
+}

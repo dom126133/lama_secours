@@ -1,0 +1,21 @@
+{
+  "shiftDefinition" : {
+    "id" : "ce6322c7-05bf-407a-af3e-8b958410a42c",
+    "version" : 0,
+    "name" : "G4_GVE",
+    "description" : "G4 PBW 2030-0615",
+    "unit" : "GVE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "createdTime" : "2023-12-05T14:03:57.811181Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-12-05T14:03:57.811181Z"
+    },
+    "intendedStartTime" : "20:30:00",
+    "allowedStartTime" : "20:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT10H30M",
+    "taskDefinitionIds" : [ ]
+  },
+  "taskDefinitions" : [ ]
+}

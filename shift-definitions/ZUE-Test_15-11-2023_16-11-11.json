@@ -1,0 +1,96 @@
+{
+  "shiftDefinition" : {
+    "id" : "c3c46c8d-8420-41c7-9316-3596f60dfb44",
+    "version" : 1,
+    "name" : "ZUE-Test",
+    "description" : "Test",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Christophe Voisard\",\"email\":\"christophe.voisard@meteoswiss.ch\",\"username\":\"cvo\"}",
+      "createdTime" : "2023-11-15T14:56:26.653900Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-11-15T15:11:11.726063Z"
+    },
+    "intendedStartTime" : "12:00:00",
+    "allowedStartTime" : "11:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT6H",
+    "taskDefinitionIds" : [ "2f93ddb8-c49f-4999-a6be-0ac84091196c", "7e582e8e-ec7d-4840-8ee7-7cf86b0c30b0" ]
+  },
+  "taskDefinitions" : [ {
+    "id" : "2f93ddb8-c49f-4999-a6be-0ac84091196c",
+    "version" : 0,
+    "name" : "test_schneevorwarn",
+    "description" : null,
+    "unit" : "GVE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "createdTime" : "2023-11-15T15:10:50.374582Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-11-15T15:10:50.374582Z"
+    },
+    "intendedStartTime" : "13:00:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT1H",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Reminder",
+      "command" : "<p>&eacute;valuer le besoin d'un Schneevorwarnung</p>",
+      "nextStatus" : null,
+      "type" : "TEXT"
+    }, {
+      "name" : "Create",
+      "url" : "https://${castor.baseUrl}/products/new?productDefinition=schneevorwarn.fr&requestId=${requestId}&action=save",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : null,
+      "type" : "HTTP_REQUEST"
+    } ]
+  }, {
+    "id" : "7e582e8e-ec7d-4840-8ee7-7cf86b0c30b0",
+    "version" : 0,
+    "name" : "previ814.de",
+    "description" : "Prognose für die nächsten 8-14 Tage",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Christophe Voisard\",\"email\":\"christophe.voisard@meteoswiss.ch\",\"username\":\"cvo\"}",
+      "createdTime" : "2023-11-15T14:54:22.198837Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Christophe Voisard\",\"email\":\"christophe.voisard@meteoswiss.ch\",\"username\":\"cvo\"}",
+      "lastModifiedTime" : "2023-11-15T14:54:22.198837Z"
+    },
+    "intendedStartTime" : "15:30:00",
+    "allowedStartTime" : "15:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT10M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Produkt generieren",
+      "url" : "${castor.baseUrl}/products/new?productDefinition=previ814.de&requestId=${requestId}&action=save",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : null,
+      "type" : "HTTP_REQUEST"
+    }, {
+      "name" : "Produkt amendieren",
+      "url" : "${castor.baseUrl}/products/new?productDefinition=previ814.de&requestId=${requestId}&action=loadLast",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : null,
+      "type" : "HTTP_REQUEST"
+    } ]
+  } ]
+}

@@ -1,0 +1,21 @@
+{
+  "shiftDefinition" : {
+    "id" : "c411c0bc-8b4c-4904-887f-ae2d8511a3da",
+    "version" : 0,
+    "name" : "G3_GVE",
+    "description" : "G3 PBW 1015-2030",
+    "unit" : "GVE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "createdTime" : "2023-12-05T14:02:25.162702Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-12-05T14:02:25.162702Z"
+    },
+    "intendedStartTime" : "10:15:00",
+    "allowedStartTime" : "09:30:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT12H",
+    "taskDefinitionIds" : [ ]
+  },
+  "taskDefinitions" : [ ]
+}

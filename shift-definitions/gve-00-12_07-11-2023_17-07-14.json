@@ -1,0 +1,21 @@
+{
+  "shiftDefinition" : {
+    "id" : "5ed69273-0abc-4496-be5e-757b33fa9445",
+    "version" : 1,
+    "name" : "gve-00-12",
+    "description" : "Tour 00-12 ",
+    "unit" : "GVE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "createdTime" : "2023-11-07T15:56:06.401527Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-11-07T16:07:14.535538Z"
+    },
+    "intendedStartTime" : "00:00:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT12H",
+    "taskDefinitionIds" : [ ]
+  },
+  "taskDefinitions" : [ ]
+}

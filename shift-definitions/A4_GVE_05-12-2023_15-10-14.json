@@ -1,0 +1,21 @@
+{
+  "shiftDefinition" : {
+    "id" : "968af65b-7def-4835-b3a6-b49593b6baf7",
+    "version" : 1,
+    "name" : "A4_GVE",
+    "description" : "A4 PBW 1200-2000",
+    "unit" : "GVE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "createdTime" : "2023-12-05T14:05:51.291810Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-12-05T14:10:14.871134Z"
+    },
+    "intendedStartTime" : "13:00:00",
+    "allowedStartTime" : "12:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT7H",
+    "taskDefinitionIds" : [ ]
+  },
+  "taskDefinitions" : [ ]
+}

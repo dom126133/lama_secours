@@ -1,0 +1,60 @@
+{
+  "shiftDefinition" : {
+    "id" : "4a3a2fba-0ca8-4146-bf52-ec054090fc5a",
+    "version" : 1,
+    "name" : "gve-12-00",
+    "description" : "Tour 12-24",
+    "unit" : "GVE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "createdTime" : "2023-11-07T16:13:35.655001Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-11-07T16:13:47.961633Z"
+    },
+    "intendedStartTime" : "12:00:00",
+    "allowedStartTime" : "11:30:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT12H",
+    "taskDefinitionIds" : [ "7f256e8c-6a97-4f90-8bc3-6a2c773bbbd2" ]
+  },
+  "taskDefinitions" : [ {
+    "id" : "7f256e8c-6a97-4f90-8bc3-6a2c773bbbd2",
+    "version" : 1,
+    "name" : "previ814.fr",
+    "description" : "Relecture Prévision J8 -> J14",
+    "unit" : "GVE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "createdTime" : "2023-11-07T15:51:40.969224Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-11-07T15:53:35.318445Z"
+    },
+    "intendedStartTime" : "14:50:00",
+    "allowedStartTime" : "14:40:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT15M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Amend",
+      "url" : "${castor.baseUrl}/products/new?productDefinition=previ814.fr&requestId=${requestId}&action=loadlast",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : null,
+      "type" : "HTTP_REQUEST"
+    }, {
+      "name" : "Create",
+      "url" : "${castor.baseUrl}/products/new?productDefinition=pre4vi814.fr&requestId=${requestId}&action=save",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : null,
+      "type" : "HTTP_REQUEST"
+    } ]
+  } ]
+}

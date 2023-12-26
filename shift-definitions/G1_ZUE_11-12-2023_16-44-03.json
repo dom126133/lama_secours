@@ -1,0 +1,318 @@
+{
+  "shiftDefinition" : {
+    "id" : "ab844834-c044-4509-8ab8-c124d10b0b07",
+    "version" : 6,
+    "name" : "G1_ZUE",
+    "description" : "Tour G1",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T13:32:37.580282Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:44:03.001417Z"
+    },
+    "intendedStartTime" : "06:00:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT8H30M",
+    "taskDefinitionIds" : [ "a3593b41-4eb3-4263-83e3-8643f807efa9", "79463b35-5efd-4cb2-8d13-bb5bbb21e8e5", "5482c3b0-4417-4500-aefb-9d46e6a33cef", "7a8f94fa-166b-4526-bea9-77e1ea973565", "c8f9456c-d6ce-4ed9-8a06-0ea557bc19a0", "0ba01058-f05f-4311-a83d-b75284d514d4", "dcc29776-7c30-4459-a400-5deade794a89", "821139e6-d641-45d6-b547-00c3138adbe8", "116733db-b6b8-4ae7-ae00-64c988a07542", "e2b1d149-2f6a-4ed8-b091-64f20ec5998b", "3fce8e23-538b-400d-8e7a-e838b15379d2" ]
+  },
+  "taskDefinitions" : [ {
+    "id" : "a3593b41-4eb3-4263-83e3-8643f807efa9",
+    "version" : 2,
+    "name" : "G1_ZUE_Einfuehrung",
+    "description" : "Einführung",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T13:36:31.457488Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:39:14.364948Z"
+    },
+    "intendedStartTime" : "06:00:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT15M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "79463b35-5efd-4cb2-8d13-bb5bbb21e8e5",
+    "version" : 1,
+    "name" : "G1_ZUE_Info",
+    "description" : "Infonet, Betriebslog und Aufdatierungsliste anschauen",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T13:45:02.417382Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:39:27.120343Z"
+    },
+    "intendedStartTime" : "06:15:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT5M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "5482c3b0-4417-4500-aefb-9d46e6a33cef",
+    "version" : 2,
+    "name" : "G1_ZUE_Medien",
+    "description" : "Medienanfragen notieren",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T13:48:31.641612Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:39:53.083434Z"
+    },
+    "intendedStartTime" : "06:15:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT7H45M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Link Medienanfragen",
+      "command" : "<p><a href=\"https://object.gever.admin.ch/web/?ObjectToOpenID=$ActaNovaDocument|E8C021C1-AC0A-4963-9C3D-C5977AEEC6C4&amp;TenantID=180&amp;OpenContentOfProperty=ActiveContent\" target=\"_blank\" rel=\"noopener\">Excelliste Medienanfragen (Acta Nova)</a></p>",
+      "nextStatus" : "COMPLETED",
+      "type" : "TEXT"
+    } ]
+  }, {
+    "id" : "7a8f94fa-166b-4526-bea9-77e1ea973565",
+    "version" : 1,
+    "name" : "G1_ZUE_Kalender",
+    "description" : "Check Wetterdienst-Kalender -> Outdoorberatungen",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T13:53:26.742815Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:39:32.456581Z"
+    },
+    "intendedStartTime" : "06:20:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT7H40M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "c8f9456c-d6ce-4ed9-8a06-0ea557bc19a0",
+    "version" : 3,
+    "name" : "G1_ZUE_WB_Vorschlag",
+    "description" : "Vorschlag Wetterbericht",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T13:59:16.152114Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:40:24.640387Z"
+    },
+    "intendedStartTime" : "06:45:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT1H15M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Vorschlag erstellen",
+      "url" : "${castor.baseUrl}/products/new?productDefinition=XYZ&requestId=${requestId}&action=save",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : "COMPLETED",
+      "type" : "HTTP_REQUEST"
+    }, {
+      "name" : "Vorschlag korrigieren",
+      "url" : "${castor.baseUrl}/products/new?productDefinition=XYZ&requestId=${requestId}&action=loadLast",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : "COMPLETED",
+      "type" : "HTTP_REQUEST"
+    } ]
+  }, {
+    "id" : "0ba01058-f05f-4311-a83d-b75284d514d4",
+    "version" : 3,
+    "name" : "G1_ZUE_WB_anpassen",
+    "description" : "ev. Wetterbericht 05h30 anpassen",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T15:25:19.809210Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:40:16.456703Z"
+    },
+    "intendedStartTime" : "07:30:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT40M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Alles in Ordnung",
+      "command" : "<p>Alles in Ordnung.</p>",
+      "nextStatus" : "COMPLETED",
+      "type" : "TEXT"
+    }, {
+      "name" : "Wetterbericht 5h30 anpassen",
+      "url" : "${castor.baseUrl}/products/new?productDefinition=XYZ&requestId=${requestId}&action=loadLast",
+      "method" : "GET",
+      "headers" : null,
+      "body" : null,
+      "nextStatus" : "COMPLETED",
+      "type" : "HTTP_REQUEST"
+    } ]
+  }, {
+    "id" : "dcc29776-7c30-4459-a400-5deade794a89",
+    "version" : 1,
+    "name" : "G1_ZUE_Kurzpause1",
+    "description" : "Kurzpause",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T15:28:18.781456Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:39:44.923923Z"
+    },
+    "intendedStartTime" : "07:45:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT15M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "821139e6-d641-45d6-b547-00c3138adbe8",
+    "version" : 2,
+    "name" : "G1_ZUE_Frostwarnung",
+    "description" : "ev. Frostwarnung",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T15:31:00.037792Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:39:21.489092Z"
+    },
+    "intendedStartTime" : "08:00:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT3H",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : "2000-03-14",
+      "endDate" : "2000-10-31",
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Link Frosttool",
+      "command" : "<p><a href=\"https://frosttool-aptools-main-prod.apps.cp.meteoswiss.ch/\" target=\"_blank\" rel=\"noopener\">Link Frost-Tool</a></p>",
+      "nextStatus" : "COMPLETED",
+      "type" : "TEXT"
+    } ]
+  }, {
+    "id" : "116733db-b6b8-4ae7-ae00-64c988a07542",
+    "version" : 1,
+    "name" : "G1_ZUE_Tel_BAFU_SLF",
+    "description" : "Ev. Tel von BAFU/SLF: Geplante Warnungen?",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T15:37:25.323986Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:40:02.626536Z"
+    },
+    "intendedStartTime" : "08:00:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT5M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "e2b1d149-2f6a-4ed8-b091-64f20ec5998b",
+    "version" : 0,
+    "name" : "G1_ZUE_Telko_vorbereiten",
+    "description" : "Vorbereiten TelKo: Texte auf Konsistenz prüfen",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T15:39:07.875765Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:39:07.875765Z"
+    },
+    "intendedStartTime" : "08:15:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT15M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ ]
+  }, {
+    "id" : "3fce8e23-538b-400d-8e7a-e838b15379d2",
+    "version" : 3,
+    "name" : "G1_ZUE_Telko",
+    "description" : "TelKo (Leitung Kurzfrist)",
+    "unit" : "ZUE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "createdTime" : "2023-12-11T15:43:34.162196Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Regula Keller\",\"email\":\"regula.keller@meteoswiss.ch\",\"username\":\"ker\"}",
+      "lastModifiedTime" : "2023-12-11T15:54:03.805597Z"
+    },
+    "intendedStartTime" : "08:30:00",
+    "allowedStartTime" : "00:00:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT15M",
+    "onDemand" : false,
+    "schedule" : {
+      "startDate" : null,
+      "endDate" : null,
+      "expression" : null
+    },
+    "commands" : [ {
+      "name" : "Link TelKo",
+      "command" : "<p><a href=\"https://teams.microsoft.com/l/meetup-join/19:meeting_MWY0ZjBjNzgtNWY0YS00YjNiLTljZTktODNkOGQxMmUyYmVk@thread.v2/0?context={%22Tid%22:%224dc9a853-049d-4a62-82a8-22f071aaaac5%22,%22Oid%22:%2260727bab-6301-4ce7-8cdc-51a8addd694e%22}\" target=\"_blank\" rel=\"noopener\">Link TelKo MS Teams</a></p>",
+      "nextStatus" : "COMPLETED",
+      "type" : "TEXT"
+    } ]
+  } ]
+}

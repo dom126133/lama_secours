@@ -1,0 +1,21 @@
+{
+  "shiftDefinition" : {
+    "id" : "b3e3dc23-0774-4c2e-836b-740758f7c652",
+    "version" : 1,
+    "name" : "A2_GVE",
+    "description" : "A2 PBW 0600-1330",
+    "unit" : "GVE",
+    "auditData" : {
+      "createdBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "createdTime" : "2023-12-05T14:04:58.833568Z",
+      "lastModifiedBy" : "{\"extId\":null,\"displayName\":\"Dominique Stussi\",\"email\":\"dominique.stussi@meteoswiss.ch\",\"username\":\"stu\"}",
+      "lastModifiedTime" : "2023-12-05T14:09:37.465902Z"
+    },
+    "intendedStartTime" : "06:00:00",
+    "allowedStartTime" : "05:30:00",
+    "zoneId" : "Europe/Zurich",
+    "duration" : "PT8H30M",
+    "taskDefinitionIds" : [ ]
+  },
+  "taskDefinitions" : [ ]
+}

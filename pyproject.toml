@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "lama-secours"
+version = "0.1.0"
+description = "Python app replacing LAMA in case of LAMA failure"
+authors = ["Dominique Stussi <dominique.stussi@meteoswiss.ch>"]
+readme = "README.md"
+packages = [{include = "lama_secours"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.1.4"
+fastapi = "^0.105.0"
+uvicorn = "^0.25.0"
+pydantic = "^2.5.3"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
