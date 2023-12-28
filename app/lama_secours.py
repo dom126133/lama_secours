@@ -1,5 +1,5 @@
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, File, UploadFile
 import zipfile
 import io
 
@@ -12,10 +12,8 @@ def home():
     return {"Message": "Hello World"}
 
 @app.post("/readzip/")
-async def read_zip(file: Zip_file):
-    zip_file_like = io.StringIO(file['content'])
-    #info = zipfile.ZipInfo(zip_file_like, 'r')
-    return zip_file_like.read()
-
+async def read_zip(file: UploadFile):
+    content = file.read()
+    return content
 if __name__ == "__main__":
     uvicorn.run("lama_secours:app", reload=True)
