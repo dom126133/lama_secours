@@ -1,5 +1,6 @@
 import uvicorn
 import os
+import json
 from fastapi import FastAPI, File, UploadFile
 from zipfile import ZipFile
 from io import BytesIO
@@ -33,8 +34,14 @@ async def upload_zip(file: UploadFile):
 @app.get("/uploadedfile")
 async def uploaded_file():
     file_list = os.scandir("tmp")
+    file_dict = {}
     for file in file_list:
         c_time = datetime.fromtimestamp(os.path.getctime(file))
         print(f"{file.name}: {c_time.strftime('%Y-%m-%d %H:%M:%S')}")
+        file_dict[file.name] = {"creation_date": c_time.strftime('%Y-%m-%d %H:%M:%S')}
+    
+    return json.dumps(file_dict)
+
+    
 if __name__ == "__main__":
     uvicorn.run("lama_secours:app", reload=True)
