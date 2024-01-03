@@ -6,6 +6,7 @@ from fastapi import FastAPI, File, UploadFile
 from zipfile import ZipFile
 from io import BytesIO
 import pandas as pd
+import numpy as np
 from uuid import uuid4
 from datetime import datetime
 
@@ -63,12 +64,16 @@ async def shifts(filename):
 @app.get("/tasks4shift/")
 async def tasks4shift(filename, shiftname):
     logging.debug(f"In tasks4shift with {filename} and {shiftname}")
+    # open zipfile and extract the json file corresponding to shiftname
     with ZipFile(f'tmp/{filename}', 'r') as zipfile:
         with zipfile.open(shiftname) as shift:
             shift_task_list = json.load(shift)
 
+    # convert the json value to pandas dataframe
     tasks = pd.json_normalize(shift_task_list['taskDefinitions'])
+    # set index to the id which is defined in LAMA ans is unique
     tasks.set_index('id', inplace=True)
+    # remove unnecessary column in the pandas dataframe
     tasks_cleaned = tasks.drop(['version',\
                                 'name',\
                                 'unit',\
@@ -84,9 +89,14 @@ async def tasks4shift(filename, shiftname):
                                 'auditData.lastModifiedBy',\
                                 'auditData.lastModifiedTime'],\
                                 axis=1)
+    # reorder the columns
     tasks_ordered = tasks_cleaned.loc[:,['intendedStartTime','zoneId','description']]
-    
-    t1 = pdf(tasks_ordered)
+    # convert the pandas dataframe to a list
+    task_list = np.array(tasks_ordered).tolist()
+    # insert the header for the columns
+    task_list.insert(0,['Start time', 'Locale', 'Description'])
+
+    t1 = pdf(task_list)
 
     return t1
 
