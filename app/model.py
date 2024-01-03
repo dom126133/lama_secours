@@ -1,5 +1,6 @@
 from pydantic import BaseModel
+from typing import List
 
-class Zip_file(BaseModel):
+class Uploaded_file(BaseModel):
     filename: str
-    content: str
+    creation_date: str
