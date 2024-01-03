@@ -15,7 +15,7 @@ def pdf(shift_definition):
     #            ,'': [-0.1, -0.2,-0.3]}
     #summary_debit = pd.DataFrame(data=data)
     
-    colwidths = 50
+    #colwidths = 50
     #GRID_STYLE = TableStyle(
     #            [('GRID', (0, 0), (-1, -1), 0.25, colors.pink),
     #            ('ALIGN', (1, 0), (-1, -1), 'RIGHT')])
@@ -25,7 +25,8 @@ def pdf(shift_definition):
     t1 = Table(np.array(shift_definition).tolist(), colWidths=[50,100,100,200]);
     print(shift_definition.columns.values)
     print(t1)
-    #doc = SimpleDocTemplate("table.pdf", pagesize=A4)
-    #element = []
-    #element.append(t1)
-    #doc.build(element)
+    doc = SimpleDocTemplate("table.pdf", pagesize=A4)
+    element = []
+    element.append(t1)
+    doc.build(element)
+    return t1

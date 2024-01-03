@@ -72,6 +72,7 @@ async def tasks4shift(filename, shiftname):
     tasks_cleaned = tasks.drop(['version',\
                                 'name',\
                                 'unit',\
+                                'commands',\
                                 'onDemand',\
                                 'allowedStartTime',\
                                 'duration',\
@@ -83,9 +84,11 @@ async def tasks4shift(filename, shiftname):
                                 'auditData.lastModifiedBy',\
                                 'auditData.lastModifiedTime'],\
                                 axis=1)
+    tasks_ordered = tasks_cleaned.loc[:,['intendedStartTime','zoneId','description']]
     
-    pdf(tasks_cleaned)
-    #print(tasks_cleaned)
+    t1 = pdf(tasks_ordered)
+
+    return t1
 
 
 
